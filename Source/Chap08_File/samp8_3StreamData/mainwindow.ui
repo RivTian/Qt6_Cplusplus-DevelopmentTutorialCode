@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>575</width>
+    <height>591</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>预定义编码序列化读写二进制文件</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QToolButton" name="btnFile">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>测试用文件</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="editFilename"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="title">
+            <string>字节序</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QRadioButton" name="radio_LittleEndian">
+              <property name="text">
+               <string>LittleEndian</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radio_BigEndian">
+              <property name="text">
+               <string>BigEndian</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="title">
+            <string>浮点数精度</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QRadioButton" name="radio_Single">
+              <property name="text">
+               <string>SinglePrecision</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radio_Double">
+              <property name="text">
+               <string>DoublePrecision</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>预编码数据序列化方式读写测试</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="horizontalSpacing">
+        <number>6</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>5</number>
+       </property>
+       <item row="10" column="1">
+        <widget class="QDoubleSpinBox" name="spin_Double">
+         <property name="decimals">
+          <number>4</number>
+         </property>
+         <property name="minimum">
+          <double>-600000000.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>600000000.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>-456.523599999999988</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QLineEdit" name="edit_UInt16">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>double</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="2">
+        <widget class="QPushButton" name="btnDouble_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="4">
+        <widget class="QCheckBox" name="chkBox_Out">
+         <property name="text">
+          <string>布尔值</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="edit_UInt8">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="btnInt16_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>qint64</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="4">
+        <widget class="QLineEdit" name="edit_Float">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QLineEdit" name="editQStr_In">
+         <property name="toolTip">
+          <string>可以输入汉字</string>
+         </property>
+         <property name="text">
+          <string>HelloQ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="btnUInt8_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="3">
+        <widget class="QPushButton" name="btnStr_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>QFont</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>quint16(0~65535)</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="btnUIn16_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QPushButton" name="btnBool_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="btnInt8_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="1">
+        <widget class="QPushButton" name="btnColor_In">
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="Text">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="PlaceholderText">
+             <brush brushstyle="NoBrush">
+              <color alpha="128">
+               <red>255</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="Text">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="PlaceholderText">
+             <brush brushstyle="NoBrush">
+              <color alpha="128">
+               <red>255</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="Text">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>120</red>
+               <green>120</green>
+               <blue>120</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="PlaceholderText">
+             <brush brushstyle="NoBrush">
+              <color alpha="128">
+               <red>255</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="text">
+          <string>选择颜色</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="2">
+        <widget class="QPushButton" name="btnFloat_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="spin_Int8">
+         <property name="minimum">
+          <number>-128</number>
+         </property>
+         <property name="maximum">
+          <number>127</number>
+         </property>
+         <property name="value">
+          <number>85</number>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="4">
+        <widget class="QLineEdit" name="editColor_Out">
+         <property name="text">
+          <string>颜色</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spin_UInt8">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>236</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="btnInt8_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="btnInt64_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>qint32</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QSpinBox" name="spin_Int32">
+         <property name="minimum">
+          <number>-2147483647</number>
+         </property>
+         <property name="maximum">
+          <number>2147483647</number>
+         </property>
+         <property name="value">
+          <number>-3546</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QSpinBox" name="spin_Int64">
+         <property name="minimum">
+          <number>-2147483647</number>
+         </property>
+         <property name="maximum">
+          <number>2147483647</number>
+         </property>
+         <property name="value">
+          <number>2564851</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLineEdit" name="edit_Int8">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="3">
+        <widget class="QPushButton" name="btnColor_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLineEdit" name="editStr_In">
+         <property name="toolTip">
+          <string>只能输入ASCII码</string>
+         </property>
+         <property name="text">
+          <string>Hello</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="4">
+        <widget class="QLineEdit" name="editStr_Out"/>
+       </item>
+       <item row="7" column="2">
+        <widget class="QPushButton" name="btnBool_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QPushButton" name="btnFont_In">
+         <property name="text">
+          <string>选择字体</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="4">
+        <widget class="QLineEdit" name="editQStr_Out">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>quint8(0~255)</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QCheckBox" name="chkBox_In">
+         <property name="text">
+          <string>布尔值</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>QString</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="3">
+        <widget class="QPushButton" name="btnQStr_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QPushButton" name="btnInt64_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="2">
+        <widget class="QPushButton" name="btnStr_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLineEdit" name="edit_Int16">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="2">
+        <widget class="QPushButton" name="btnFont_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="btnUInt16_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="btnUInt8_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QSpinBox" name="spin_UInt16">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>65535</number>
+         </property>
+         <property name="value">
+          <number>54862</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>qint16(-32768~32767)</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="btnInt32_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>float</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="4">
+        <widget class="QLineEdit" name="edit_Double">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="btnInt16_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="4">
+        <widget class="QLineEdit" name="editFont_Out">
+         <property name="text">
+          <string>字体</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="3">
+        <widget class="QPushButton" name="btnDouble_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>qint8(-128~127)</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>char* string</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Bool</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="QLineEdit" name="edit_Int64">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="3">
+        <widget class="QPushButton" name="btnFloat_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QPushButton" name="btnInt32_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QDoubleSpinBox" name="spin_Float">
+         <property name="decimals">
+          <number>4</number>
+         </property>
+         <property name="minimum">
+          <double>-60000000.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>600000000.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>1542.361400000000003</double>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="spin_Int16">
+         <property name="minimum">
+          <number>-32768</number>
+         </property>
+         <property name="maximum">
+          <number>32767</number>
+         </property>
+         <property name="value">
+          <number>-1522</number>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="2">
+        <widget class="QPushButton" name="btnQStr_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="2">
+        <widget class="QPushButton" name="btnColor_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>QColor</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="QLineEdit" name="edit_Int32">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="3">
+        <widget class="QPushButton" name="btnFont_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>qfloat16</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QPushButton" name="btnInt_Write">
+         <property name="text">
+          <string>写入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3">
+        <widget class="QPushButton" name="btnInt_Read">
+         <property name="text">
+          <string>读出</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="4">
+        <widget class="QLineEdit" name="edit_Float16">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QDoubleSpinBox" name="spin_Float16">
+         <property name="minimum">
+          <double>-10000.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>10000.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>675.259999999999991</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actClearOutput"/>
+   <addaction name="actSaveALL"/>
+   <addaction name="actReadALL"/>
+   <addaction name="separator"/>
+   <addaction name="actClose"/>
+  </widget>
+  <action name="actClearOutput">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/214.bmp</normaloff>:/icons/images/214.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>编辑框全清空</string>
+   </property>
+   <property name="toolTip">
+    <string>读出数据的编辑框全清空</string>
+   </property>
+  </action>
+  <action name="actClose">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/132.bmp</normaloff>:/icons/images/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actSaveALL">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/saveall1.bmp</normaloff>:/icons/images/saveall1.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>连续写入文件</string>
+   </property>
+   <property name="toolTip">
+    <string>连续写入文件</string>
+   </property>
+  </action>
+  <action name="actReadALL">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/upfold1.bmp</normaloff>:/icons/images/upfold1.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>连续从文件读取</string>
+   </property>
+   <property name="toolTip">
+    <string>连续从文件读取</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actClose</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>402</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

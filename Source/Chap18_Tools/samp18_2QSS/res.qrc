@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/296568.jpg</file>
+        <file>images/open3.bmp</file>
+        <file>images/save1.bmp</file>
+        <file>images/exit.bmp</file>
+        <file>images/812.bmp</file>
+        <file>images/304.bmp</file>
+        <file>images/down.bmp</file>
+        <file>images/left.bmp</file>
+        <file>images/right.bmp</file>
+        <file>images/up.bmp</file>
+        <file>images/606.bmp</file>
+        <file>images/unchecked.bmp</file>
+        <file>images/checked.bmp</file>
+        <file>images/border.jpg</file>
+        <file>images/border2.jpg</file>
+    </qresource>
+</RCC>

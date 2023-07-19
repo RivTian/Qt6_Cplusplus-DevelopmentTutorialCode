@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>407</width>
+    <height>282</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>生产者/消费者模型，使用QWaitCondition</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/images/images/Games.ico</normaloff>:/images/images/Games.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPlainTextEdit" name="plainTextEdit"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="labPic">
+      <property name="minimumSize">
+       <size>
+        <width>160</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="res.qrc">:/dice/images/d0.jpg</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actThread_Run"/>
+   <addaction name="actThread_Quit"/>
+   <addaction name="actClear"/>
+   <addaction name="actClose"/>
+  </widget>
+  <action name="actThread_Run">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/flag24.png</normaloff>:/images/images/flag24.png</iconset>
+   </property>
+   <property name="text">
+    <string>启动线程</string>
+   </property>
+   <property name="toolTip">
+    <string>启动线程运行</string>
+   </property>
+  </action>
+  <action name="actThread_Quit">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/block24.png</normaloff>:/images/images/block24.png</iconset>
+   </property>
+   <property name="text">
+    <string>结束线程</string>
+   </property>
+   <property name="toolTip">
+    <string>结束线程运行</string>
+   </property>
+  </action>
+  <action name="actClear">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/212.bmp</normaloff>:/images/images/212.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>清空</string>
+   </property>
+   <property name="toolTip">
+    <string>清空文本框</string>
+   </property>
+  </action>
+  <action name="actClose">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/132.bmp</normaloff>:/images/images/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actClose</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

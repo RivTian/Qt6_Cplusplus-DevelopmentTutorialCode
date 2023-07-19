@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>493</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>标准对话框的使用</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>6</number>
+   </property>
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="1" column="1">
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="title">
+        <string/>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="btnClearText">
+          <property name="text">
+           <string>清除文本框内容</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res.qrc">
+            <normaloff>:/icons/images/212.bmp</normaloff>:/icons/images/212.bmp</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnClose">
+          <property name="text">
+           <string>退出</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res.qrc">
+            <normaloff>:/icons/images/132.bmp</normaloff>:/icons/images/132.bmp</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="title">
+        <string>标准输入对话框 QInputDialog</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="btnInputString">
+          <property name="text">
+           <string>输入字符串</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="btnInputInt">
+          <property name="text">
+           <string>输入整数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="btnInputFloat">
+          <property name="text">
+           <string>输入浮点数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="btnInputItem">
+          <property name="text">
+           <string>条目选择输入</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>标准消息框 QMessageBox</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="btnMsgQuestion">
+          <property name="text">
+           <string>question</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="btnMsgInformation">
+          <property name="text">
+           <string>information</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="btnMsgWarning">
+          <property name="text">
+           <string>warning</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="btnMsgCritical">
+          <property name="text">
+           <string>critical</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="btnMsgAbout">
+          <property name="text">
+           <string>about</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="btnMsgAboutQt">
+          <property name="text">
+           <string>aboutQt</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="minimumSize">
+        <size>
+         <width>220</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>标准对话框</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="btnSelDir">
+          <property name="text">
+           <string>选择已有目录</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="btnColor">
+          <property name="text">
+           <string>选择颜色</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="btnOpen">
+          <property name="text">
+           <string>打开一个文件</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="btnSave">
+          <property name="text">
+           <string>保存文件</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="btnFont">
+          <property name="text">
+           <string>选择字体</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="btnOpenMulti">
+          <property name="text">
+           <string>打开多个文件</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="btnProgress">
+          <property name="text">
+           <string>进度对话框</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPlainTextEdit" name="plainTextEdit">
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>btnOpen</tabstop>
+  <tabstop>btnOpenMulti</tabstop>
+  <tabstop>btnSelDir</tabstop>
+  <tabstop>btnSave</tabstop>
+  <tabstop>btnColor</tabstop>
+  <tabstop>btnFont</tabstop>
+  <tabstop>btnMsgQuestion</tabstop>
+  <tabstop>btnMsgInformation</tabstop>
+  <tabstop>btnInputString</tabstop>
+  <tabstop>btnInputInt</tabstop>
+  <tabstop>btnInputFloat</tabstop>
+  <tabstop>btnInputItem</tabstop>
+  <tabstop>btnClearText</tabstop>
+  <tabstop>plainTextEdit</tabstop>
+ </tabstops>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>419</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnClearText</sender>
+   <signal>clicked()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>298</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>images/exit.bmp</file>
+        <file>images/828.bmp</file>
+        <file>images/export1.bmp</file>
+        <file>images/import1.bmp</file>
+        <file>images/BeIDE.ico</file>
+        <file>images/Cancel.bmp</file>
+        <file>images/OK.bmp</file>
+        <file>images/Pnp3.ico</file>
+        <file>images/Pnp4.ico</file>
+        <file>images/714.bmp</file>
+        <file>images/110.GIF</file>
+        <file>images/103.bmp</file>
+        <file>images/Pnp2.ico</file>
+        <file>images/716.bmp</file>
+        <file>images/710.bmp</file>
+        <file>images/712.bmp</file>
+        <file>images/120.bmp</file>
+        <file>images/326.bmp</file>
+        <file>images/332.bmp</file>
+        <file>images/322.bmp</file>
+    </qresource>
+</RCC>

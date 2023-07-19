@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>429</width>
+    <height>307</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>定时器</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>定时器</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="verticalSpacing">
+       <number>9</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btnStart">
+        <property name="text">
+         <string>开始</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="btnStop">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>停止</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" colspan="2">
+       <widget class="QPushButton" name="btnOneShot">
+        <property name="text">
+         <string>动态创建单次定时器</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>定时周期</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spinBoxIntv">
+        <property name="suffix">
+         <string> ms</string>
+        </property>
+        <property name="maximum">
+         <number>999999</number>
+        </property>
+        <property name="value">
+         <number>1000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QRadioButton" name="radioContiue">
+        <property name="text">
+         <string>连续定时</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QRadioButton" name="radioOneShot">
+        <property name="text">
+         <string>单次定时</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>定时器精度</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QRadioButton" name="radioPrecise">
+        <property name="text">
+         <string>PreciseTimer</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioCoarse">
+        <property name="text">
+         <string>CoarseTimer</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioVeryCoarse">
+        <property name="text">
+         <string>VeryCoarseTimer</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>当前时间（小时：分：秒）</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLCDNumber" name="LCDHour">
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="digitCount">
+         <number>2</number>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Filled</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>87.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>87</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="LCDMin">
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="digitCount">
+         <number>2</number>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Filled</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>26.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>26</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="LCDSec">
+        <property name="digitCount">
+         <number>2</number>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>35</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labElapsedTime">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>流逝的时间</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

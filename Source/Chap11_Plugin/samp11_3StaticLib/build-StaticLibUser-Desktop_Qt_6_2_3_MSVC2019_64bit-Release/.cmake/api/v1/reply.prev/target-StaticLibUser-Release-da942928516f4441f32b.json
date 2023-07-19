@@ -1,0 +1,416 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "StaticLibUser.exe"
+		},
+		{
+			"path" : "StaticLibUser.pdb"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"_qt_internal_create_executable",
+			"qt6_add_executable",
+			"qt_add_executable",
+			"target_link_libraries",
+			"LINK_DIRECTORIES",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"D:/Qt/6.2.3/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 851,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 523,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 559,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 524,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 53,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Zc:__cplusplus"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-permissive-"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-utf-8"
+				},
+				{
+					"fragment" : "-std:c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-StaticLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release"
+				},
+				{
+					"path" : "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/StaticLibUser"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-StaticLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/StaticLibUser_autogen/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/StaticLibUser/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.2.3/msvc2019_64/include/QtCore"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.2.3/msvc2019_64/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.2.3/msvc2019_64/mkspecs/win32-msvc"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.2.3/msvc2019_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.2.3/msvc2019_64/include/QtGui"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					5
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "StaticLibUser_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "StaticLibUser_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "StaticLibUser::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:windows",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-DYNAMICBASE",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-NXCOMPAT",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-OPT:REF",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-OPT:ICF",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-GUARD:CF",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-LIBPATH:D:\\Qt6Book\\SamplesV5_CMake\\Chap11_Plugin\\samp11_3StaticLib\\StaticLibUser\\include",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "D:\\Qt\\6.2.3\\msvc2019_64\\lib\\Qt6Widgets.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "MyStaticLib.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "D:\\Qt\\6.2.3\\msvc2019_64\\lib\\Qt6Gui.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "D:\\Qt\\6.2.3\\msvc2019_64\\lib\\Qt6Core.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "mpr.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "userenv.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "D:\\Qt\\6.2.3\\msvc2019_64\\lib\\Qt6EntryPoint.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "shell32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "d3d11.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dxgi.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dxguid.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "StaticLibUser",
+	"nameOnDisk" : "StaticLibUser.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				3,
+				5
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				4,
+				6
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				7
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-StaticLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/StaticLibUser_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "mainwindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "mainwindow.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-StaticLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/StaticLibUser_autogen/include/ui_mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-StaticLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/StaticLibUser_autogen/timestamp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-StaticLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/StaticLibUser_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -1,0 +1,3 @@
+D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4.dir
+D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/ALL_BUILD.dir
+D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/ZERO_CHECK.dir

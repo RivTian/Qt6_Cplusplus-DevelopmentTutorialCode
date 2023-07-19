@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/volumn.bmp</file>
+        <file>images/mute.bmp</file>
+        <file>images/104.bmp</file>
+        <file>images/22.ico</file>
+        <file>images/5.ico</file>
+        <file>images/23.ico</file>
+        <file>images/video_chat.ico</file>
+        <file>images/remove_user.ico</file>
+        <file>images/Shut Down.ico</file>
+        <file>images/exit_24.ico</file>
+        <file>images/file_pictures.ico</file>
+        <file>images/824.bmp</file>
+        <file>images/08.JPG</file>
+    </qresource>
+    <qresource prefix="/sound">
+        <file>images/shutter.wav</file>
+    </qresource>
+</RCC>

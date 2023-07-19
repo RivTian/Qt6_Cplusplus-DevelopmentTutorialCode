@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Music Player</Name>
+    <Version>1.0.0</Version>
+    <Title>Music Player Created by Qt 6</Title>
+    <Publisher>WWB</Publisher>
+    <StartMenuDir>Qt6 Samples</StartMenuDir>
+    <TargetDir>@HomeDir@/Qt6Samples</TargetDir>
+    <CreateLocalRepository>true</CreateLocalRepository>
+    <WizardStyle>Aero</WizardStyle>
+    <WizardShowPageList>true</WizardShowPageList>
+	<WizardDefaultWidth> 650   </WizardDefaultWidth>
+	<WizardDefaultHeight> 430  </WizardDefaultHeight>
+</Installer>

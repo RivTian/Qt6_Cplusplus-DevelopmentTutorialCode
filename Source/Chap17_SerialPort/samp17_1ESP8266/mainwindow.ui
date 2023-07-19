@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>847</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>QSerialPort串口通信</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/image/images/Pnp2.ico</normaloff>:/image/images/Pnp2.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,1">
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_Port">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>串口号</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboCom_Port">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>波特率</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboCom_Buad">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <property name="currentIndex">
+          <number>3</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>9600</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>19200</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>57600</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>115200</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>256000</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>460800</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>数据位</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboCom_DataBit">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="currentIndex">
+          <number>3</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>停止位</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboCom_StopBit">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1.5</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>校验位</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboCom_Parity">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>NoParity</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>EvenParity</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OddParity</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QToolBox" name="toolBox">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="page_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>183</width>
+          <height>463</height>
+         </rect>
+        </property>
+        <attribute name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/image/images/110.GIF</normaloff>:/image/images/110.GIF</iconset>
+        </attribute>
+        <attribute name="label">
+         <string>WiFi模块AT指令操作--1</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="title">
+            <string>模块基本操作</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QPushButton" name="btnWF_Test">
+              <property name="toolTip">
+               <string>AT+RST</string>
+              </property>
+              <property name="text">
+               <string>模块测试</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/332.bmp</normaloff>:/image/images/332.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnWF_Reset">
+              <property name="toolTip">
+               <string>AT+RST</string>
+              </property>
+              <property name="text">
+               <string>模块重启</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/326.bmp</normaloff>:/image/images/326.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_4">
+              <property name="text">
+               <string> 恢复出厂设置</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/103.bmp</normaloff>:/image/images/103.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>WiFi串口参数</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>波特率</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboWiFi_UartBuad">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+                <property name="currentIndex">
+                 <number>3</number>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>9600</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>19200</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>57600</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>115200</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>256000</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>460800</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnWF_UART_Set">
+              <property name="text">
+               <string>设置UART参数</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/322.bmp</normaloff>:/image/images/322.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnWF_UART_Qry">
+              <property name="text">
+               <string>查询UART参数</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/332.bmp</normaloff>:/image/images/332.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_5">
+           <property name="title">
+            <string>网络设置</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QPushButton" name="btnWF_SetAsSTA">
+              <property name="text">
+               <string>设置为STA</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/322.bmp</normaloff>:/image/images/322.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>网络名称</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="editAP_Name">
+                <property name="text">
+                 <string>CU_5NPf</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>密  码</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="editAP_PWD">
+                <property name="text">
+                 <string>t2wbr5ns</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnWF_SetAP">
+              <property name="text">
+               <string>设置路由器</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/322.bmp</normaloff>:/image/images/322.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnWF_GetAP">
+              <property name="text">
+               <string> 查询路由器参数</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/332.bmp</normaloff>:/image/images/332.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>200</width>
+          <height>420</height>
+         </rect>
+        </property>
+        <attribute name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/image/images/BeIDE.ico</normaloff>:/image/images/BeIDE.ico</iconset>
+        </attribute>
+        <attribute name="label">
+         <string>WiFi模块AT指令操作--2</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="QGroupBox" name="groupBox_7">
+           <property name="title">
+            <string>TCP服务器参数</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <layout class="QFormLayout" name="formLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>IP地址</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="editServer_IP">
+                <property name="text">
+                 <string>192.168.1.13</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string> 端口</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="spinServer_Port">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="maximum">
+                 <number>999999</number>
+                </property>
+                <property name="value">
+                 <number>1200</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnTCP_SetServer">
+              <property name="text">
+               <string>设置服务器参数</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/322.bmp</normaloff>:/image/images/322.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnTCP_AutoConn">
+              <property name="text">
+               <string>重启后自动连接服务器</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/322.bmp</normaloff>:/image/images/322.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnTCP_Query">
+              <property name="text">
+               <string> 查询连接状态</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/332.bmp</normaloff>:/image/images/332.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnTCP_GetMac">
+              <property name="text">
+               <string> 查询MAC和IP地址</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/332.bmp</normaloff>:/image/images/332.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="title">
+            <string>数据透传</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="QPushButton" name="btnTrans_Exit">
+              <property name="text">
+               <string>退出透传模式</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/322.bmp</normaloff>:/image/images/322.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnTrans_Enter">
+              <property name="text">
+               <string>进入透传模式</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/322.bmp</normaloff>:/image/images/322.bmp</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnTrans_AutoOnReset">
+              <property name="text">
+               <string>开机自动连接和透传</string>
+              </property>
+              <property name="icon">
+               <iconset resource="res.qrc">
+                <normaloff>:/image/images/BeIDE.ico</normaloff>:/image/images/BeIDE.ico</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>143</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>串口数据记录</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPlainTextEdit" name="textCOM">
+           <property name="plainText">
+            <string>如果发送AT指令时，WiFi模块无任何响应，可能是因为WiFi模块处于透传模式。这时，需要先退出透传模式，再测试AT指令</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <property name="documentMode">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>通用发送</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <property name="topMargin">
+              <number>2</number>
+             </property>
+             <property name="bottomMargin">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QCheckBox" name="chkBox_NewLine1">
+               <property name="text">
+                <string>添加回车换行</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnNormSend">
+               <property name="text">
+                <string>发送</string>
+               </property>
+               <property name="icon">
+                <iconset resource="res.qrc">
+                 <normaloff>:/image/images/828.bmp</normaloff>:/image/images/828.bmp</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>502</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="plainText_Norm">
+            <property name="plainText">
+             <string>hello</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>常用AT指令</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>28</height>
+             </size>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="topMargin">
+              <number>2</number>
+             </property>
+             <property name="bottomMargin">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QCheckBox" name="chkBox_NewLine2">
+               <property name="text">
+                <string>添加回车换行</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>655</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QFrame" name="frame_CmdA">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <property name="topMargin">
+                <number>5</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <property name="verticalSpacing">
+                <number>3</number>
+               </property>
+               <item row="3" column="0">
+                <widget class="QLineEdit" name="editCmd_A4">
+                 <property name="text">
+                  <string>AT+CWJAP?</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="TMyLabel" name="lab_A4">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_A4</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLineEdit" name="editCmd_A5">
+                 <property name="text">
+                  <string>AT+CIFSR</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLineEdit" name="editCmd_A1">
+                 <property name="text">
+                  <string>AT+CIPMODE?</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="TMyLabel" name="lab_A3">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_A3</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="TMyLabel" name="lab_A5">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_A5</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLineEdit" name="editCmd_A6">
+                 <property name="text">
+                  <string>AT+CIPSTATUS</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="TMyLabel" name="lab_A2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_A2</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLineEdit" name="editCmd_A3">
+                 <property name="text">
+                  <string>AT+CWMODE?</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="TMyLabel" name="lab_A6">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_A6</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="TMyLabel" name="lab_A1">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_A1</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLineEdit" name="editCmd_A2">
+                 <property name="text">
+                  <string>AT+UART?</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_CmdB">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <property name="topMargin">
+                <number>5</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <property name="verticalSpacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QLineEdit" name="editCmd_B1">
+                 <property name="text">
+                  <string>AT+CIPMODE=0</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="TMyLabel" name="lab_B2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_B2</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLineEdit" name="editCmd_B5">
+                 <property name="text">
+                  <string>AT+CIPSTART=&quot;TCP&quot;,&quot;192.168.1.13&quot;,8080</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="TMyLabel" name="lab_B3">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_B3</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="TMyLabel" name="lab_B4">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_B4</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLineEdit" name="editCmd_B2">
+                 <property name="text">
+                  <string>AT+UART=115200,8,1,0,0</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="TMyLabel" name="lab_B5">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_B5</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLineEdit" name="editCmd_B4">
+                 <property name="text">
+                  <string>AT+CWJAP=&quot;CU_5NPf&quot;,&quot;t2wbr5ns&quot;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="TMyLabel" name="lab_B1">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_B1</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLineEdit" name="editCmd_B6">
+                 <property name="text">
+                  <string>AT+SAVETRANSLINK=1,&quot;192.168.1.13&quot;,8080,&quot;TCP&quot;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="TMyLabel" name="lab_B6">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/image/images/828.bmp</pixmap>
+                 </property>
+                 <property name="buddy">
+                  <cstring>editCmd_B6</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLineEdit" name="editCmd_B3">
+                 <property name="text">
+                  <string>AT+CWMODE=1</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actCom_Open"/>
+   <addaction name="actCom_Close"/>
+   <addaction name="actClear"/>
+   <addaction name="separator"/>
+   <addaction name="actClose"/>
+  </widget>
+  <action name="actCom_Open">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/images/Pnp4.ico</normaloff>:/image/images/Pnp4.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开串口</string>
+   </property>
+   <property name="toolTip">
+    <string>打开串口</string>
+   </property>
+  </action>
+  <action name="actCom_Close">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/images/712.bmp</normaloff>:/image/images/712.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>关闭串口</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭串口</string>
+   </property>
+  </action>
+  <action name="actClose">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/images/exit.bmp</normaloff>:/image/images/exit.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出本系统</string>
+   </property>
+  </action>
+  <action name="actCom_Info">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/images/714.bmp</normaloff>:/image/images/714.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>串口信息</string>
+   </property>
+   <property name="toolTip">
+    <string>本系统的串口信息</string>
+   </property>
+  </action>
+  <action name="actClear">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/images/103.bmp</normaloff>:/image/images/103.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>清空文本框</string>
+   </property>
+   <property name="toolTip">
+    <string>清空串口接收文本框</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TMyLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">tmylabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actClose</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>308</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

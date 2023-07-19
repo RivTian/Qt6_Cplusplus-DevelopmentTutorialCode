@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/open3.bmp</file>
+        <file>images/exit.bmp</file>
+        <file>images/616.bmp</file>
+        <file>images/310.bmp</file>
+        <file>images/312.bmp</file>
+        <file>images/630.bmp</file>
+    </qresource>
+</RCC>

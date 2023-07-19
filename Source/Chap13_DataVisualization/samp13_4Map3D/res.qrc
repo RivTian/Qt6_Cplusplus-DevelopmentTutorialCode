@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/map">
+        <file>mountain.png</file>
+        <file>seagray.png</file>
+        <file>sea.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>images/211.JPG</file>
+        <file>images/720.bmp</file>
+        <file>images/726.bmp</file>
+        <file>images/132.bmp</file>
+        <file>images/326.bmp</file>
+    </qresource>
+</RCC>

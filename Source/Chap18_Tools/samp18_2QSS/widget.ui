@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>375</width>
+    <height>238</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: rgb(0, 85, 127);
+	color: rgb(255, 255, 0);
+	font: 14pt &quot;黑体&quot;;
+}
+
+QLineEdit{
+     border: 2px groove gray;
+     border-radius: 10px;
+     padding: 2px 4px;
+ 	 color: rgb(255, 255, 0);
+     border-color: rgb(0,255,0);
+}</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>55</y>
+     <width>156</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hello</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>125</y>
+     <width>156</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Qt样式表</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

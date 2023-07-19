@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>628</width>
+    <height>392</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>QSqlRelationalTableModel 的使用</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>75</x>
+      <y>20</y>
+      <width>401</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">alternate-background-color: rgb(211, 249, 248);</string>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+    </property>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>25</number>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actOpenDB"/>
+   <addaction name="separator"/>
+   <addaction name="actRecAppend"/>
+   <addaction name="actRecInsert"/>
+   <addaction name="actRecDelete"/>
+   <addaction name="separator"/>
+   <addaction name="actSubmit"/>
+   <addaction name="actRevert"/>
+   <addaction name="separator"/>
+   <addaction name="actFields"/>
+   <addaction name="actQuit"/>
+  </widget>
+  <action name="actOpenDB">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/open3.bmp</normaloff>:/images/images/open3.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开数据库</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/exit.bmp</normaloff>:/images/images/exit.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actRecAppend">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/316.bmp</normaloff>:/images/images/316.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+   <property name="toolTip">
+    <string>添加记录</string>
+   </property>
+  </action>
+  <action name="actRecInsert">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/306.bmp</normaloff>:/images/images/306.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>插入</string>
+   </property>
+   <property name="toolTip">
+    <string>插入记录</string>
+   </property>
+  </action>
+  <action name="actSubmit">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/save1.bmp</normaloff>:/images/images/save1.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存修改</string>
+   </property>
+  </action>
+  <action name="actRevert">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/ubdo.bmp</normaloff>:/images/images/ubdo.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="toolTip">
+    <string>取消修改</string>
+   </property>
+  </action>
+  <action name="actRecDelete">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/delete1.bmp</normaloff>:/images/images/delete1.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除记录</string>
+   </property>
+  </action>
+  <action name="actFields">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/124.bmp</normaloff>:/images/images/124.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>字段列表</string>
+   </property>
+   <property name="toolTip">
+    <string>字段列表</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>825</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>摄像头拍照与录像</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,1">
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="groupBox_Camera">
+         <property name="title">
+          <string>摄像头设备</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>摄像头</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboCam_List"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>支持的拍照分辨率</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QComboBox" name="comboCam_PhotoRes"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>摄像头位置</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboCam_Position">
+            <item>
+             <property name="text">
+              <string>未设置</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>后置</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>前置</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>支持的视频分辨率</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QComboBox" name="comboCam_VideoRes"/>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>视频帧率范围</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QComboBox" name="comboCam_FrameRate"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>摄像头控制特性</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="chkBoxCam_Color">
+            <property name="text">
+             <string>ColorTemperature</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="chkBoxCam_Manual">
+            <property name="text">
+             <string>ManualExposureTime</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="chkBoxCam_Exposure">
+            <property name="text">
+             <string>ExposureCompensation</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QCheckBox" name="chkBoxCam_Custom">
+            <property name="text">
+             <string>CustomFocusPoint</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="chkBoxCam_Iso">
+            <property name="text">
+             <string>IsoSensitivity</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QCheckBox" name="chkBoxCam_Focus">
+            <property name="text">
+             <string>FocusDistance</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>摄像头预览</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QVideoWidget" name="videoPreview" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="documentMode">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>拍摄的照片</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="title">
+            <string>拍照设置</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,1,0">
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>图片编码品质</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="comboImage_Quality">
+              <property name="currentIndex">
+               <number>3</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>VeryLowQuality</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>LowQuality</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>NormalQuality</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>HighQuality</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>VeryHighQuality</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QCheckBox" name="chkBox_Sound">
+              <property name="text">
+               <string>播放音效</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>图片分辨率</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="comboImage_Resolution"/>
+            </item>
+            <item row="1" column="2">
+             <widget class="QCheckBox" name="chkBox_SaveToFile">
+              <property name="text">
+               <string>保存为文件</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>529</width>
+              <height>202</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QLabel" name="labImage">
+               <property name="text">
+                <string>拍照的图片</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>录像设置</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QPushButton" name="btnVideoFile">
+             <property name="text">
+              <string>保存文件</string>
+             </property>
+             <property name="icon">
+              <iconset resource="res.qrc">
+               <normaloff>:/images/images/104.bmp</normaloff>:/images/images/104.bmp</iconset>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="editVideo_OutputFile">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_5">
+           <property name="title">
+            <string>录像设置</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <property name="verticalSpacing">
+             <number>9</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>视频编码</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="comboVideo_Codec"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>文件格式</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="comboVideo_FileFormat"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>视频编码品质</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="comboViedo_Quality">
+              <property name="currentIndex">
+               <number>3</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>VeryLowQuality</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>LowQuality</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>NormalQuality</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>HighQuality</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>VeryHighQuality</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>视频分辨率</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="comboVideo_Resolution"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>101</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actStartCamera"/>
+   <addaction name="actStopCamera"/>
+   <addaction name="separator"/>
+   <addaction name="actCapture"/>
+   <addaction name="separator"/>
+   <addaction name="actVideoRecord"/>
+   <addaction name="actVideoStop"/>
+   <addaction name="separator"/>
+   <addaction name="actQuit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actStartCamera">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/video_chat.ico</normaloff>:/images/images/video_chat.ico</iconset>
+   </property>
+   <property name="text">
+    <string>开启摄像头</string>
+   </property>
+   <property name="toolTip">
+    <string>开启摄像头</string>
+   </property>
+  </action>
+  <action name="actStopCamera">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/remove_user.ico</normaloff>:/images/images/remove_user.ico</iconset>
+   </property>
+   <property name="text">
+    <string>关闭摄像头</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭摄像头</string>
+   </property>
+  </action>
+  <action name="actVideoRecord">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/5.ico</normaloff>:/images/images/5.ico</iconset>
+   </property>
+   <property name="text">
+    <string>开始录像</string>
+   </property>
+   <property name="toolTip">
+    <string>开始录像</string>
+   </property>
+   <property name="shortcut">
+    <string>F8</string>
+   </property>
+  </action>
+  <action name="actCapture">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/file_pictures.ico</normaloff>:/images/images/file_pictures.ico</iconset>
+   </property>
+   <property name="text">
+    <string>拍照</string>
+   </property>
+   <property name="toolTip">
+    <string>拍照</string>
+   </property>
+   <property name="shortcut">
+    <string>F10</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/exit_24.ico</normaloff>:/images/images/exit_24.ico</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actVideoStop">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/Shut Down.ico</normaloff>:/images/images/Shut Down.ico</iconset>
+   </property>
+   <property name="text">
+    <string>停止录像</string>
+   </property>
+   <property name="toolTip">
+    <string>停止录像</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QVideoWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">&lt;QVideoWidget&gt;</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,9 @@
+# ninja log v5
+2	327	7009301768105627	SharedLibUser_autogen/timestamp	5de085050403b59
+2	327	7009301768105627	SharedLibUser_autogen/mocs_compilation.cpp	5de085050403b59
+2	327	7009301768105627	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_4SharedLib/build-SharedLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/SharedLibUser_autogen/timestamp	5de085050403b59
+2	327	7009301768105627	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_4SharedLib/build-SharedLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/SharedLibUser_autogen/mocs_compilation.cpp	5de085050403b59
+331	1726	7009301783168011	CMakeFiles/SharedLibUser.dir/SharedLibUser_autogen/mocs_compilation.cpp.obj	ce5559696e3d5621
+329	1745	7009301783431887	CMakeFiles/SharedLibUser.dir/main.cpp.obj	46482ad79d3aeeb1
+334	1883	7009301784792350	CMakeFiles/SharedLibUser.dir/mainwindow.cpp.obj	ecbf6e837f2102fa
+1883	2035	7009301786078952	SharedLibUser.exe	263795d94a67ce65

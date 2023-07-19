@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5E8709BF-01DF-3D3A-B20E-D8D85C646FC7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>samp2_4</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">samp2_4.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">samp2_4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">samp2_4.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">samp2_4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">samp2_4.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">samp2_4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">samp2_4.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">samp2_4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_Debug;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_Debug;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_Debug;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target samp2_4</Message>
+      <Command>setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E touch D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/samp2_4_autogen/autouic_Debug.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Qt\6.2.3\msvc2019_64\lib\Qt6Widgetsd.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6Guid.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6Cored.lib;mpr.lib;userenv.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6EntryPointd.lib;shell32.lib;d3d11.lib;dxgi.lib;dxguid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/Debug/samp2_4.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/Debug/samp2_4.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_Release;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_Release;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_Release;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target samp2_4</Message>
+      <Command>setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E touch D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/samp2_4_autogen/autouic_Release.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Qt\6.2.3\msvc2019_64\lib\Qt6Widgets.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6Gui.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6EntryPoint.lib;shell32.lib;d3d11.lib;dxgi.lib;dxguid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -GUARD:CF</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/Release/samp2_4.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/Release/samp2_4.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_MinSizeRel;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_MinSizeRel;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_MinSizeRel;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target samp2_4</Message>
+      <Command>setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E touch D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/samp2_4_autogen/autouic_MinSizeRel.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Qt\6.2.3\msvc2019_64\lib\Qt6Widgets.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6Gui.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6EntryPoint.lib;shell32.lib;d3d11.lib;dxgi.lib;dxguid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -GUARD:CF</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/MinSizeRel/samp2_4.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/MinSizeRel/samp2_4.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_RelWithDebInfo;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zc:__cplusplus -utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;UNICODE;_UNICODE;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_RelWithDebInfo;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_RelWithDebInfo;D:\Qt\6.2.3\msvc2019_64\include\QtCore;D:\Qt\6.2.3\msvc2019_64\include;D:\Qt\6.2.3\msvc2019_64\mkspecs\win32-msvc;D:\Qt\6.2.3\msvc2019_64\include\QtWidgets;D:\Qt\6.2.3\msvc2019_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target samp2_4</Message>
+      <Command>setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E touch D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/samp2_4_autogen/autouic_RelWithDebInfo.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Qt\6.2.3\msvc2019_64\lib\Qt6Widgets.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6Gui.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6Core.lib;mpr.lib;userenv.lib;D:\Qt\6.2.3\msvc2019_64\lib\Qt6EntryPoint.lib;shell32.lib;d3d11.lib;dxgi.lib;dxguid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -GUARD:CF</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/RelWithDebInfo/samp2_4.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/RelWithDebInfo/samp2_4.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\9dbfb903867b2d6d6fc05fcea7221a98\autouic_(CONFIG).stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\dialog.ui;D:\Qt\6.2.3\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_Debug.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\dialog.ui;D:\Qt\6.2.3\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_Release.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\dialog.ui;D:\Qt\6.2.3\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_MinSizeRel.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\dialog.ui;D:\Qt\6.2.3\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_RelWithDebInfo.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\35059db1696eaec7eb95e19105639548\qrc_res.cpp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\res.qrc;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\samp2_4_autogen.dir\AutoRcc_res_EWIEGA46WW_Info.json;D:\Qt\6.2.3\msvc2019_64\.\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\EWIEGA46WW\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\res.qrc;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\samp2_4_autogen.dir\AutoRcc_res_EWIEGA46WW_Info.json;D:\Qt\6.2.3\msvc2019_64\.\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\EWIEGA46WW\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\res.qrc;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\samp2_4_autogen.dir\AutoRcc_res_EWIEGA46WW_Info.json;D:\Qt\6.2.3\msvc2019_64\.\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\EWIEGA46WW\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/samp2_4_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\res.qrc;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\samp2_4_autogen.dir\AutoRcc_res_EWIEGA46WW_Info.json;D:\Qt\6.2.3\msvc2019_64\.\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\EWIEGA46WW\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Tools\CMake_64\bin\cmake.exe -SD:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/source -BD:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build --check-stamp-file D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\FindWrapAtomic.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\FindWrapVulkanHeaders.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Config.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Dependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Targets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6VersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtFeature.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtFeatureCommon.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigExtras.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreMacros.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsMacros.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsVersionlessTargets.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXCompiler.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCompilerIdDetection.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCXXCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompileFeatures.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompilerABI.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompilerId.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineRCCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineSystem.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeFindBinUtils.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeFindDependencyMacro.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseArguments.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseLibraryArchitecture.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeRCCompiler.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystem.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestCXXCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestCompilerCommon.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestRCCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckLibraryExists.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ROCMClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CompilerId\VS-10.vcxproj.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindThreads.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindVulkan.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\FeatureTesting.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-Determine-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeCXXCompiler.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeRCCompiler.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeSystem.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\res.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Tools\CMake_64\bin\cmake.exe -SD:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/source -BD:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build --check-stamp-file D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\FindWrapAtomic.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\FindWrapVulkanHeaders.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Config.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Dependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Targets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6VersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtFeature.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtFeatureCommon.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigExtras.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreMacros.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsMacros.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsVersionlessTargets.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXCompiler.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCompilerIdDetection.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCXXCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompileFeatures.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompilerABI.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompilerId.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineRCCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineSystem.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeFindBinUtils.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeFindDependencyMacro.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseArguments.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseLibraryArchitecture.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeRCCompiler.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystem.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestCXXCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestCompilerCommon.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestRCCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckLibraryExists.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ROCMClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CompilerId\VS-10.vcxproj.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindThreads.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindVulkan.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\FeatureTesting.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-Determine-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeCXXCompiler.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeRCCompiler.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeSystem.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\res.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Tools\CMake_64\bin\cmake.exe -SD:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/source -BD:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build --check-stamp-file D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\FindWrapAtomic.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\FindWrapVulkanHeaders.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Config.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Dependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Targets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6VersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtFeature.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtFeatureCommon.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigExtras.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreMacros.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsMacros.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsVersionlessTargets.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXCompiler.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCompilerIdDetection.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCXXCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompileFeatures.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompilerABI.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompilerId.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineRCCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineSystem.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeFindBinUtils.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeFindDependencyMacro.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseArguments.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseLibraryArchitecture.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeRCCompiler.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystem.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestCXXCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestCompilerCommon.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestRCCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckLibraryExists.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ROCMClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CompilerId\VS-10.vcxproj.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindThreads.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindVulkan.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\FeatureTesting.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-Determine-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeCXXCompiler.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeRCCompiler.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeSystem.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\res.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Tools\CMake_64\bin\cmake.exe -SD:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/source -BD:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build --check-stamp-file D:/Qt6Book/SamplesV5/Chap02_Basics/samp2_4CMakeGUI/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\FindWrapAtomic.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\FindWrapVulkanHeaders.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Config.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigExtras.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6ConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Dependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6Targets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\Qt6VersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtFeature.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtFeatureCommon.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicCMakeVersionHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicDependencyHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicFinalizerHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicFindPackageHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicPluginHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicTargetHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6\QtPublicWalkLibsHelpers.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigExtras.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreMacros.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Core\Qt6CoreVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6CoreTools\Qt6CoreToolsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6EntryPointPrivate\Qt6EntryPointPrivateVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Gui\Qt6GuiVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6GuiTools\Qt6GuiToolsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsMacros.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6Widgets\Qt6WidgetsVersionlessTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsAdditionalTargetInfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfig.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfigVersion.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsConfigVersionImpl.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsDependencies.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets-debug.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets-relwithdebinfo.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets.cmake;D:\Qt\6.2.3\msvc2019_64\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsVersionlessTargets.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXCompiler.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeCompilerIdDetection.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCXXCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompileFeatures.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompilerABI.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineCompilerId.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineRCCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeDetermineSystem.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeFindBinUtils.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeFindDependencyMacro.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseArguments.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeParseLibraryArchitecture.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeRCCompiler.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystem.cmake.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestCXXCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestCompilerCommon.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CMakeTestRCCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CheckLibraryExists.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\ROCMClang-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\CompilerId\VS-10.vcxproj.in;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindThreads.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\FindVulkan.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Internal\FeatureTesting.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-Determine-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Qt\Tools\CMake_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeCXXCompiler.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeRCCompiler.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\3.21.1\CMakeSystem.cmake;D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\res.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\main.cpp" />
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\dialog.cpp" />
+    <ClInclude Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\dialog.h" />
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\dialog.ui">
+    </None>
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\res.qrc">
+    </None>
+    <ClInclude Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_Debug\ui_dialog.h" />
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_Debug.stamp">
+    </None>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\EWIEGA46WW\qrc_res.cpp" />
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_Release\ui_dialog.h" />
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_Release.stamp">
+    </None>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_MinSizeRel\ui_dialog.h" />
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_MinSizeRel.stamp">
+    </None>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_RelWithDebInfo\ui_dialog.h" />
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_RelWithDebInfo.stamp">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\ZERO_CHECK.vcxproj">
+      <Project>{187EA842-01BF-30F1-8246-FE3AC27A1948}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

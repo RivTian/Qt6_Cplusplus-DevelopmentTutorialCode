@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>782</width>
+    <height>511</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>QSqlQueryModel的使用--Readonly</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>702</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string>所有记录</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QTableView" name="tableView">
+        <property name="styleSheet">
+         <string notr="true">alternate-background-color: rgb(211, 249, 248);</string>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>80</number>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>当前记录</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QFormLayout" name="formLayout">
+           <property name="verticalSpacing">
+            <number>9</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>工  号</string>
+             </property>
+             <property name="buddy">
+              <cstring>dbSpinEmpNo</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="dbSpinEmpNo">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>10000</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>姓  名</string>
+             </property>
+             <property name="buddy">
+              <cstring>dbEditName</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="dbEditName"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>性  别</string>
+             </property>
+             <property name="buddy">
+              <cstring>dbComboSex</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="dbComboSex">
+             <item>
+              <property name="text">
+               <string>男</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>女</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>出生日期</string>
+             </property>
+             <property name="buddy">
+              <cstring>dbEditBirth</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QDateEdit" name="dbEditBirth">
+             <property name="displayFormat">
+              <string>yyyy-MM-dd</string>
+             </property>
+             <property name="calendarPopup">
+              <bool>true</bool>
+             </property>
+             <property name="date">
+              <date>
+               <year>2017</year>
+               <month>2</month>
+               <day>20</day>
+              </date>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>出生省份</string>
+             </property>
+             <property name="buddy">
+              <cstring>dbComboProvince</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QComboBox" name="dbComboProvince">
+             <item>
+              <property name="text">
+               <string>北京</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>上海</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>天津</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>重庆</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>安徽</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>河北</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>河南</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>湖北</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>湖南</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>山西</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>山东</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>陕西</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>江苏</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>江西</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>部  门</string>
+             </property>
+             <property name="buddy">
+              <cstring>dbComboDep</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QComboBox" name="dbComboDep">
+             <item>
+              <property name="text">
+               <string>销售部</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>技术部</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>生产部</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>行政部</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>工  资</string>
+             </property>
+             <property name="buddy">
+              <cstring>dbSpinSalary</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QSpinBox" name="dbSpinSalary">
+             <property name="prefix">
+              <string/>
+             </property>
+             <property name="minimum">
+              <number>1000</number>
+             </property>
+             <property name="maximum">
+              <number>50000</number>
+             </property>
+             <property name="singleStep">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>照  片</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="dbLabPhoto">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>350</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>dbLabPhoto</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>备  注</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>5</number>
+         </property>
+         <property name="topMargin">
+          <number>5</number>
+         </property>
+         <property name="rightMargin">
+          <number>5</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QPlainTextEdit" name="dbEditMemo">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actOpenDB"/>
+   <addaction name="separator"/>
+   <addaction name="actRecFirst"/>
+   <addaction name="actRecPrevious"/>
+   <addaction name="actRecNext"/>
+   <addaction name="actRecLast"/>
+   <addaction name="separator"/>
+   <addaction name="actQuit"/>
+  </widget>
+  <action name="actOpenDB">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/open3.bmp</normaloff>:/images/images/open3.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>打开数据库</string>
+   </property>
+   <property name="toolTip">
+    <string>打开数据库</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/exit.bmp</normaloff>:/images/images/exit.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actRecFirst">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/616.bmp</normaloff>:/images/images/616.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>首记录</string>
+   </property>
+   <property name="toolTip">
+    <string>移到首记录</string>
+   </property>
+  </action>
+  <action name="actRecPrevious">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/310.bmp</normaloff>:/images/images/310.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>前一记录</string>
+   </property>
+   <property name="toolTip">
+    <string>前一记录</string>
+   </property>
+  </action>
+  <action name="actRecNext">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/312.bmp</normaloff>:/images/images/312.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>后一记录</string>
+   </property>
+   <property name="toolTip">
+    <string>后一记录</string>
+   </property>
+  </action>
+  <action name="actRecLast">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/630.bmp</normaloff>:/images/images/630.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>尾记录</string>
+   </property>
+   <property name="toolTip">
+    <string>尾记录</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

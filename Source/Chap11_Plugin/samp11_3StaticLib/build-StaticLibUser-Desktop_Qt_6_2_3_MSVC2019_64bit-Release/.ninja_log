@@ -1,0 +1,22 @@
+# ninja log v5
+327	1839	7009273459238987	CMakeFiles/StaticLibUser.dir/mainwindow.cpp.obj	68fbf1baf5a56b1c
+6	326	7009273443032792	StaticLibUser_autogen/timestamp	56a9693c622f28aa
+6	326	7009273443032792	StaticLibUser_autogen/mocs_compilation.cpp	56a9693c622f28aa
+6	326	7009273443032792	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-StaticLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/StaticLibUser_autogen/timestamp	56a9693c622f28aa
+0	562	7009273802420058	build.ninja	dcb246c134f91412
+1840	2006	7009273460614131	StaticLibUser.exe	d948f37fd2da66ac
+6	326	7009273443032792	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-StaticLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/StaticLibUser_autogen/mocs_compilation.cpp	56a9693c622f28aa
+329	1720	7009273458022417	CMakeFiles/StaticLibUser.dir/main.cpp.obj	aa3f7d4f73b006ec
+332	1721	7009273458022417	CMakeFiles/StaticLibUser.dir/StaticLibUser_autogen/mocs_compilation.cpp.obj	c766de63e0cc8c69
+0	25	0	CMakeFiles/clean.additional	639c58e388065fbd
+25	34	0	clean	ef1b363c3316a1b2
+0	28	0	CMakeFiles/clean.additional	639c58e388065fbd
+29	39	0	clean	ef1b363c3316a1b2
+3	328	7009274694163728	StaticLibUser_autogen/timestamp	56a9693c622f28aa
+3	328	7009274694163728	StaticLibUser_autogen/mocs_compilation.cpp	56a9693c622f28aa
+3	328	7009274694163728	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-StaticLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/StaticLibUser_autogen/timestamp	56a9693c622f28aa
+3	328	7009274694163728	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-StaticLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/StaticLibUser_autogen/mocs_compilation.cpp	56a9693c622f28aa
+329	1738	7009274709230848	CMakeFiles/StaticLibUser.dir/main.cpp.obj	aa3f7d4f73b006ec
+336	1742	7009274709387113	CMakeFiles/StaticLibUser.dir/StaticLibUser_autogen/mocs_compilation.cpp.obj	c766de63e0cc8c69
+333	1888	7009274710858786	CMakeFiles/StaticLibUser.dir/mainwindow.cpp.obj	68fbf1baf5a56b1c
+1888	2052	7009274712234715	StaticLibUser.exe	d948f37fd2da66ac

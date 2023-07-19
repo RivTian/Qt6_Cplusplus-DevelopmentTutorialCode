@@ -1,0 +1,62 @@
+The system is: Windows - 10.0.19044 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30139 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.29.30139.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_4SharedLib/build-SharedLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_4SharedLib/build-SharedLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~2/MICROS~2/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_b35b7 && [1/2] Building CXX object CMakeFiles\cmTC_b35b7.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_b35b7.exe
+
+
+
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
+Change Dir: D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_4SharedLib/build-SharedLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~2/MICROS~2/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_93061 && [1/2] Building CXX object CMakeFiles\cmTC_93061.dir\src.cxx.obj
+D:\Qt6Book\SamplesV5_CMake\Chap11_Plugin\samp11_4SharedLib\build-SharedLibUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release\CMakeFiles\CMakeTmp\src.cxx(17): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
+[2/2] Linking CXX executable cmTC_93061.exe
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+void test(volatile std::atomic<std::int64_t> &a)
+{
+    std::int64_t v = a.load(std::memory_order_acquire);
+    while (!a.compare_exchange_strong(v, v + 1,
+                                      std::memory_order_acq_rel,
+                                      std::memory_order_acquire)) {
+        v = a.exchange(v - 1);
+    }
+    a.store(v + 1, std::memory_order_release);
+}
+
+int main(int, char **)
+{
+    void *ptr = (void*)0xffffffc0; // any random pointer
+    test(*reinterpret_cast<std::atomic<std::int64_t> *>(ptr));
+    return 0;
+}

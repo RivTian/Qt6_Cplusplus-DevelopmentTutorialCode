@@ -1,0 +1,9 @@
+# ninja log v5
+1	279	7009298412326173	MySharedLib_autogen/timestamp	c22bf31007b9612d
+1	279	7009298412326173	MySharedLib_autogen/mocs_compilation.cpp	c22bf31007b9612d
+1	279	7009298412326173	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_4SharedLib/build-MySharedLib-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/MySharedLib_autogen/timestamp	c22bf31007b9612d
+1	279	7009298412326173	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_4SharedLib/build-MySharedLib-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/MySharedLib_autogen/mocs_compilation.cpp	c22bf31007b9612d
+280	1651	7009298426902079	CMakeFiles/MySharedLib.dir/MySharedLib_autogen/mocs_compilation.cpp.obj	f6092fa059b84f6e
+283	1965	7009298430064566	CMakeFiles/MySharedLib.dir/tpendialog.cpp.obj	e8a57702cc602de0
+1966	2127	7009298431533261	MySharedLib.dll	5a583c6e2788a050
+1966	2127	7009298431533261	MySharedLib.lib	5a583c6e2788a050

@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/132.bmp</file>
+        <file>images/212.bmp</file>
+        <file>images/block24.png</file>
+        <file>images/flag24.png</file>
+        <file>images/pause24.png</file>
+        <file>images/play24.png</file>
+        <file>images/stop-playing24.png</file>
+        <file>images/Games.ico</file>
+    </qresource>
+    <qresource prefix="/dice">
+        <file>images/d0.jpg</file>
+        <file>images/d1.jpg</file>
+        <file>images/d2.jpg</file>
+        <file>images/d3.jpg</file>
+        <file>images/d4.jpg</file>
+        <file>images/d5.jpg</file>
+        <file>images/d6.jpg</file>
+    </qresource>
+</RCC>

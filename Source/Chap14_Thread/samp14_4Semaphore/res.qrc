@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/132.bmp</file>
+        <file>images/212.bmp</file>
+        <file>images/block24.png</file>
+        <file>images/flag24.png</file>
+        <file>images/pause24.png</file>
+        <file>images/play24.png</file>
+        <file>images/stop-playing24.png</file>
+        <file>images/Games.ico</file>
+    </qresource>
+</RCC>

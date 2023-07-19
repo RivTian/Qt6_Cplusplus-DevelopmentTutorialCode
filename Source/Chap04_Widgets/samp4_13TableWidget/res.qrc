@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>icons/yes.bmp</file>
+        <file>icons/no.bmp</file>
+        <file>icons/girl.ico</file>
+        <file>icons/boy.ico</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TDialogLocate</class>
+ <widget class="QDialog" name="TDialogLocate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>332</width>
+    <height>142</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>定位单元格并设置文字</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>列  号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="spinBoxColumn">
+        <property name="minimum">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QCheckBox" name="chkBoxColumn">
+        <property name="text">
+         <string>列增</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>行  号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spinBoxRow"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QCheckBox" name="chkBoxRow">
+        <property name="text">
+         <string>行增</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>文  字</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QLineEdit" name="edtCaption"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="btnSetText">
+       <property name="text">
+        <string>设置文字</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/images/506.bmp</normaloff>:/images/images/506.bmp</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnClose">
+       <property name="text">
+        <string>关  闭</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/images/132.bmp</normaloff>:/images/images/132.bmp</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>TDialogLocate</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>274</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

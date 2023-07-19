@@ -1,0 +1,5 @@
+D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-MyStaticLib-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/edit_cache.dir
+D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-MyStaticLib-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/MyStaticLib.dir
+D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-MyStaticLib-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/rebuild_cache.dir
+D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-MyStaticLib-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/MyStaticLib_autogen_timestamp_deps.dir
+D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-MyStaticLib-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/MyStaticLib_autogen.dir

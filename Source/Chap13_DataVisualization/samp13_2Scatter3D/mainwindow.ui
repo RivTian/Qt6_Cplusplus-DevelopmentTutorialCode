@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>879</width>
+    <height>563</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>三维散点图</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QFrame" name="frameSetup">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>15</y>
+      <width>271</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>300</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>旋转和平移</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>预设视角</string>
+          </property>
+          <property name="buddy">
+           <cstring>comboCamera</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QComboBox" name="comboCamera">
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>FrontLow</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Front</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>FrontHigh</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>LeftLow</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Left</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>LeftHigh</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RightLow</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Right</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RightHigh</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>BehindLow</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Behind</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>BehindHigh</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>IsometricLeft</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>IsometricLeftHigh</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>IsometricRight</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>IsometricRightHigh</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DirectlyAbove</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DirectlyAboveCW45</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DirectlyAboveCCW45</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>FrontBelow</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>LeftBelow</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RightBelow</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>BehindBelow</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DirectlyBelow</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>水平旋转</string>
+          </property>
+          <property name="buddy">
+           <cstring>sliderH</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSlider" name="sliderH">
+          <property name="minimum">
+           <number>-180</number>
+          </property>
+          <property name="maximum">
+           <number>180</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2" rowspan="3">
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <item row="0" column="1">
+            <widget class="QToolButton" name="btnMoveUp">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::UpArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QToolButton" name="btnMoveLeft">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::LeftArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QToolButton" name="btnMoveRight">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::RightArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QToolButton" name="btnMoveDown">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::DownArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QToolButton" name="btnResetCamera">
+             <property name="toolTip">
+              <string>复位到FrontHigh视角</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="res.qrc">
+               <normaloff>:/icons/images/326.bmp</normaloff>:/icons/images/326.bmp</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>垂直旋转</string>
+          </property>
+          <property name="buddy">
+           <cstring>sliderV</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSlider" name="sliderV">
+          <property name="minimum">
+           <number>-180</number>
+          </property>
+          <property name="maximum">
+           <number>180</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>缩  放</string>
+          </property>
+          <property name="buddy">
+           <cstring>sliderZoom</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSlider" name="sliderZoom">
+          <property name="minimum">
+           <number>10</number>
+          </property>
+          <property name="maximum">
+           <number>500</number>
+          </property>
+          <property name="value">
+           <number>100</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="title">
+        <string>图形总体</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="horizontalSpacing">
+         <number>10</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>8</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>图形主题</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="indent">
+           <number>10</number>
+          </property>
+          <property name="buddy">
+           <cstring>cBoxTheme</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QCheckBox" name="chkBoxAxisTitle">
+          <property name="text">
+           <string>显示轴标题</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QCheckBox" name="chkBoxShadow">
+          <property name="text">
+           <string>显示阴影</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QCheckBox" name="chkBoxBackground">
+          <property name="text">
+           <string>显示背景</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>字体大小</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="indent">
+           <number>10</number>
+          </property>
+          <property name="buddy">
+           <cstring>spinFontSize</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>选择模式</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="indent">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="cBoxTheme">
+          <item>
+           <property name="text">
+            <string>Qt</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Primary Colors</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Digia</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>StoneMoss</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ArmyBlue</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Retro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ebony</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Isabelle</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="spinFontSize">
+          <property name="minimum">
+           <number>5</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QCheckBox" name="chkBoxGrid">
+          <property name="text">
+           <string>显示背景网格</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QCheckBox" name="chkBoxAxisBackground">
+          <property name="text">
+           <string>显示轴标签背景</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QCheckBox" name="chkBoxReverse">
+          <property name="text">
+           <string>垂直坐标轴反向</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="cBoxSelectionMode">
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Item</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Row</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Item And Row</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Column</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Item And Column</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Row And Column</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Item Row And Column</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Row Slice</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Column Slice</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="title">
+        <string>序列设置</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="verticalSpacing">
+         <number>8</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>散点形状</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="indent">
+           <number>10</number>
+          </property>
+          <property name="buddy">
+           <cstring>cBoxBarStyle</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QComboBox" name="cBoxBarStyle">
+          <property name="currentIndex">
+           <number>7</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>Bar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cube</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pyramid</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cone</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cylinder</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>BevelBar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>BevelCube</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sphere</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Minimal</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Arrow</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Point</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>散点大小</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="indent">
+           <number>10</number>
+          </property>
+          <property name="buddy">
+           <cstring>spinItemSize</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QDoubleSpinBox" name="spinItemSize">
+          <property name="maximum">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.010000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.150000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="chkBoxSmooth">
+          <property name="text">
+           <string>光滑效果</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="2">
+         <widget class="QCheckBox" name="chkBoxItemLabel">
+          <property name="text">
+           <string>显示选中散点的标签</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actSeries_BaseColor"/>
+   <addaction name="actPoint_ChangeValue"/>
+   <addaction name="actData_Add"/>
+   <addaction name="actData_Delete"/>
+   <addaction name="separator"/>
+   <addaction name="actClose"/>
+  </widget>
+  <action name="actSeries_BaseColor">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/720.bmp</normaloff>:/icons/images/720.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>序列颜色</string>
+   </property>
+   <property name="toolTip">
+    <string>设置序列基本颜色</string>
+   </property>
+  </action>
+  <action name="actPoint_ChangeValue">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/810.bmp</normaloff>:/icons/images/810.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>修改点坐标</string>
+   </property>
+   <property name="toolTip">
+    <string>修改选中点坐标(F2)</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="actData_Delete">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/318.bmp</normaloff>:/icons/images/318.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>删除当前点</string>
+   </property>
+   <property name="toolTip">
+    <string>删除当前点(Del)</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actData_Add">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/316.bmp</normaloff>:/icons/images/316.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>添加随机点</string>
+   </property>
+   <property name="toolTip">
+    <string>添加随机点(F3)</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="actClose">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/132.bmp</normaloff>:/icons/images/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actClose</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>453</x>
+     <y>334</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

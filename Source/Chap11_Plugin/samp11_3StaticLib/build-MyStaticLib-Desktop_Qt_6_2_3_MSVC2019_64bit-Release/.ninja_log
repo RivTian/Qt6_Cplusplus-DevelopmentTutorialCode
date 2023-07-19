@@ -1,0 +1,10 @@
+# ninja log v5
+0	20	0	CMakeFiles/clean.additional	639c58e388065fbd
+21	30	0	clean	ef1b363c3316a1b2
+1	259	7009076397185865	MyStaticLib_autogen/timestamp	8215fb0f44defdc
+1	259	7009076397185865	MyStaticLib_autogen/mocs_compilation.cpp	8215fb0f44defdc
+1	259	7009076397185865	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-MyStaticLib-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/MyStaticLib_autogen/timestamp	8215fb0f44defdc
+1	259	7009076397185865	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_3StaticLib/build-MyStaticLib-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/MyStaticLib_autogen/mocs_compilation.cpp	8215fb0f44defdc
+261	1892	7009076414137707	CMakeFiles/MyStaticLib.dir/tpendialog.cpp.obj	bb19cc0a90f25c63
+259	1625	7009076411440569	CMakeFiles/MyStaticLib.dir/MyStaticLib_autogen/mocs_compilation.cpp.obj	5fb49d89d158d496
+1893	1938	7009076414629062	MyStaticLib.lib	d720889b7aff3cef

@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>icons/15.ico</file>
+        <file>icons/35.ico</file>
+        <file>icons/29.ico</file>
+        <file>icons/32.ico</file>
+        <file>icons/118.bmp</file>
+        <file>icons/open3.bmp</file>
+        <file>icons/418.bmp</file>
+        <file>icons/416.bmp</file>
+        <file>icons/414.bmp</file>
+        <file>icons/exit.bmp</file>
+        <file>icons/delete1.bmp</file>
+        <file>icons/426.bmp</file>
+        <file>icons/424.bmp</file>
+        <file>icons/122.bmp</file>
+        <file>icons/fold.bmp</file>
+        <file>icons/814.bmp</file>
+        <file>icons/824.bmp</file>
+        <file>icons/31.ico</file>
+        <file>icons/BEBULB_16.ICO</file>
+    </qresource>
+</RCC>

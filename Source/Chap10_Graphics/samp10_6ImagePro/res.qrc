@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/132.bmp</file>
+        <file>images/824.bmp</file>
+        <file>images/rotateleft.png</file>
+        <file>images/rotateright.png</file>
+        <file>images/001.GIF</file>
+        <file>images/export1.bmp</file>
+        <file>images/preview1.bmp</file>
+        <file>images/save.bmp</file>
+        <file>images/flip-horizontal.ico</file>
+        <file>images/flip-vertical.ico</file>
+        <file>images/126.bmp</file>
+        <file>images/print1.bmp</file>
+        <file>images/116.bmp</file>
+        <file>images/save-as24.png</file>
+        <file>images/zoomin.png</file>
+        <file>images/zoomout.png</file>
+    </qresource>
+</RCC>

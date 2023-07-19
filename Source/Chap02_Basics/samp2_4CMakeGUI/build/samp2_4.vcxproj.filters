@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\EWIEGA46WW\qrc_res.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_Debug\ui_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_Release\ui_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_MinSizeRel\ui_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\include_RelWithDebInfo\ui_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\9dbfb903867b2d6d6fc05fcea7221a98\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\CMakeFiles\35059db1696eaec7eb95e19105639548\qrc_res.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\dialog.ui" />
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\source\res.qrc" />
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_Debug.stamp" />
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_Release.stamp" />
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="D:\Qt6Book\SamplesV5\Chap02_Basics\samp2_4CMakeGUI\build\samp2_4_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B542D48B-FFC0-3F93-86E2-EE7AE36FF202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7D5B9C4F-7545-3E2C-8AE5-1D42C6486EE4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{892AB3BF-FE7D-33E6-B6FC-E3521A582FDC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

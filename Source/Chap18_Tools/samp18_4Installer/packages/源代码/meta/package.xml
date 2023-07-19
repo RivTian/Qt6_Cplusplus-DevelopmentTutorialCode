@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Package>
+    <DisplayName>源代码</DisplayName>
+    <Description>Music Player的Qt项目源代码</Description>
+    <Version>1.0.0</Version>
+    <ReleaseDate>2022-02-16</ReleaseDate>
+	<Default>true</Default>
+    <SortingPriority>80</SortingPriority>
+</Package>

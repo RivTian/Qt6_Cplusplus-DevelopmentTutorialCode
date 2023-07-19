@@ -1,0 +1,11 @@
+# ninja log v5
+0	23	0	CMakeFiles/clean.additional	639c58e388065fbd
+24	33	0	clean	ef1b363c3316a1b2
+1	281	7009322079918456	BatteryUser_autogen/timestamp	cad81f8e53bde801
+1	281	7009322079918456	BatteryUser_autogen/mocs_compilation.cpp	cad81f8e53bde801
+1	281	7009322079918456	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_2Plugin/build-BatteryUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/BatteryUser_autogen/timestamp	cad81f8e53bde801
+1	281	7009322079918456	D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_2Plugin/build-BatteryUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/BatteryUser_autogen/mocs_compilation.cpp	cad81f8e53bde801
+286	1700	7009322095023890	CMakeFiles/BatteryUser.dir/main.cpp.obj	e4e8178646943724
+282	1711	7009322095023890	CMakeFiles/BatteryUser.dir/BatteryUser_autogen/mocs_compilation.cpp.obj	e8c83ae6ab9329c6
+284	1714	7009322095202127	CMakeFiles/BatteryUser.dir/widget.cpp.obj	a0b9f8ebd6093cb0
+1714	1880	7009322096490980	BatteryUser.exe	d561b8868a2621f3

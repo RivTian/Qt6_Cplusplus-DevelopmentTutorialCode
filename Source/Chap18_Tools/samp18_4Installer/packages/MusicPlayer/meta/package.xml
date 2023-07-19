@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Package>
+    <DisplayName>Music Player</DisplayName>
+    <Description>Music Player应用程序</Description>
+    <Version>1.0.0</Version>
+    <ReleaseDate>2022-02-16</ReleaseDate>
+    <Licenses>
+        <License name="GNU Public License Agreement" file="license.txt" />
+    </Licenses>	
+	<ForcedInstallation>true</ForcedInstallation>
+	<Script>installscript.qs</Script>
+    <SortingPriority>100</SortingPriority>
+</Package>

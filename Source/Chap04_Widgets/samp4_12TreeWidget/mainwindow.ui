@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>796</width>
+    <height>477</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>QTreeWidget的使用</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>421</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>419</width>
+       <height>299</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="labPic">
+        <property name="text">
+         <string>labPic</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>796</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPic">
+    <property name="title">
+     <string>目录树</string>
+    </property>
+    <addaction name="actAddFolder"/>
+    <addaction name="actAddFiles"/>
+    <addaction name="actDeleteItem"/>
+    <addaction name="actScanItems"/>
+    <addaction name="separator"/>
+    <addaction name="actQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="actZoomIn"/>
+    <addaction name="actZoomOut"/>
+    <addaction name="actZoomRealSize"/>
+    <addaction name="actZoomFitW"/>
+    <addaction name="actZoomFitH"/>
+   </widget>
+   <addaction name="menuPic"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actAddFolder"/>
+   <addaction name="actAddFiles"/>
+   <addaction name="actDeleteItem"/>
+   <addaction name="actScanItems"/>
+   <addaction name="separator"/>
+   <addaction name="actZoomIn"/>
+   <addaction name="actZoomOut"/>
+   <addaction name="actZoomRealSize"/>
+   <addaction name="actZoomFitW"/>
+   <addaction name="actZoomFitH"/>
+   <addaction name="separator"/>
+   <addaction name="actDockFloat"/>
+   <addaction name="actDockVisible"/>
+   <addaction name="separator"/>
+   <addaction name="actQuit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>图片目录树</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="leftMargin">
+      <number>4</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>4</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
+     <item>
+      <widget class="QTreeWidget" name="treeFiles">
+       <property name="columnCount">
+        <number>2</number>
+       </property>
+       <attribute name="headerDefaultSectionSize">
+        <number>150</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>节点</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>节点类型</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignLeading|AlignVCenter</set>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>图片文件</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/images/icons/15.ico</normaloff>:/images/icons/15.ico</iconset>
+        </property>
+        <item>
+         <property name="text">
+          <string>分组节点</string>
+         </property>
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/images/icons/open3.bmp</normaloff>:/images/icons/open3.bmp</iconset>
+         </property>
+         <item>
+          <property name="text">
+           <string>图片节点</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res.qrc">
+            <normaloff>:/images/icons/31.ico</normaloff>:/images/icons/31.ico</iconset>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>分组2</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>图片2</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res.qrc">
+            <normaloff>:/images/icons/31.ico</normaloff>:/images/icons/31.ico</iconset>
+          </property>
+         </item>
+        </item>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actAddFolder">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/open3.bmp</normaloff>:/images/icons/open3.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>添加目录...</string>
+   </property>
+   <property name="toolTip">
+    <string>添加目录</string>
+   </property>
+   <property name="statusTip">
+    <string>选择目录，创建目录节点</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actAddFiles">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/824.bmp</normaloff>:/images/icons/824.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>添加文件...</string>
+   </property>
+   <property name="toolTip">
+    <string>添加文件</string>
+   </property>
+   <property name="statusTip">
+    <string>选择多个文件，创建文件节点</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actZoomIn">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/418.bmp</normaloff>:/images/icons/418.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="toolTip">
+    <string>放大图片</string>
+   </property>
+   <property name="statusTip">
+    <string>图片放大为原来的120%</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actZoomOut">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/416.bmp</normaloff>:/images/icons/416.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="toolTip">
+    <string>缩小图片</string>
+   </property>
+   <property name="statusTip">
+    <string>图片缩小为原来的80%</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actZoomRealSize">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/414.bmp</normaloff>:/images/icons/414.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>实际大小</string>
+   </property>
+   <property name="toolTip">
+    <string>图片实际大小显示</string>
+   </property>
+   <property name="statusTip">
+    <string>图片以实际大小显示</string>
+   </property>
+  </action>
+  <action name="actZoomFitW">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/424.bmp</normaloff>:/images/icons/424.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>适合宽度</string>
+   </property>
+   <property name="toolTip">
+    <string>适合宽度显示图片</string>
+   </property>
+   <property name="statusTip">
+    <string>图片宽度适应显示区宽度</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actDeleteItem">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/delete1.bmp</normaloff>:/images/icons/delete1.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>删除节点</string>
+   </property>
+   <property name="toolTip">
+    <string>删除节点</string>
+   </property>
+   <property name="statusTip">
+    <string>删除当前节点</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/exit.bmp</normaloff>:/images/icons/exit.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出本系统</string>
+   </property>
+   <property name="statusTip">
+    <string>退出本系统</string>
+   </property>
+  </action>
+  <action name="actZoomFitH">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/426.bmp</normaloff>:/images/icons/426.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>适合高度</string>
+   </property>
+   <property name="toolTip">
+    <string>适合高度显示图片</string>
+   </property>
+   <property name="statusTip">
+    <string>图片高度适应显示区高度</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actScanItems">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/fold.bmp</normaloff>:/images/icons/fold.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>遍历节点</string>
+   </property>
+   <property name="toolTip">
+    <string>遍历节点</string>
+   </property>
+   <property name="statusTip">
+    <string>遍历所有节点，节点标题前加*</string>
+   </property>
+  </action>
+  <action name="actDockVisible">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/BEBULB_16.ICO</normaloff>:/images/icons/BEBULB_16.ICO</iconset>
+   </property>
+   <property name="text">
+    <string>窗口可见</string>
+   </property>
+   <property name="toolTip">
+    <string>停靠窗口可见</string>
+   </property>
+   <property name="statusTip">
+    <string>显示或隐藏图片目录树</string>
+   </property>
+  </action>
+  <action name="actDockFloat">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/icons/814.bmp</normaloff>:/images/icons/814.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>窗口浮动</string>
+   </property>
+   <property name="toolTip">
+    <string>停靠窗口浮动</string>
+   </property>
+   <property name="statusTip">
+    <string>使图片目录树窗口浮动显示</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

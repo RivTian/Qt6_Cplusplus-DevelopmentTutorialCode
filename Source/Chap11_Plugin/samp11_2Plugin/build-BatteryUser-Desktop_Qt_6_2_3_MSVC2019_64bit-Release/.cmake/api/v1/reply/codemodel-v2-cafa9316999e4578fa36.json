@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BatteryUser",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BatteryUser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BatteryUser-Release-58b89781125dc6a0fd74.json",
+					"name" : "BatteryUser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BatteryUser_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BatteryUser_autogen-Release-0c2051abb112294f46d9.json",
+					"name" : "BatteryUser_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BatteryUser_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BatteryUser_autogen_timestamp_deps-Release-8a97d0755a20bc0950a4.json",
+					"name" : "BatteryUser_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_2Plugin/build-BatteryUser-Desktop_Qt_6_2_3_MSVC2019_64bit-Release",
+		"source" : "D:/Qt6Book/SamplesV5_CMake/Chap11_Plugin/samp11_2Plugin/BatteryUser"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

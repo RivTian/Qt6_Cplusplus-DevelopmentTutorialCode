@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>614</width>
+    <height>431</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>图表交互操作</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Drag Mode</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboDragMode">
+         <item>
+          <property name="text">
+           <string>NoDrag</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ScrollHandDrag</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RubberBandDrag</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Rubber Band</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboRubberBand">
+         <item>
+          <property name="text">
+           <string>NoRubberBand</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VerticalRubberBand</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HorizontalRubberBand</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RectangleRubberBand</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RectangleRubberBand__Custom</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>125</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="TChartView" name="chartView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actDeselectAll"/>
+   <addaction name="separator"/>
+   <addaction name="actZoomIn"/>
+   <addaction name="actZoomOut"/>
+   <addaction name="actZoomReset"/>
+   <addaction name="separator"/>
+   <addaction name="actQuit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actZoomReset">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/414.bmp</normaloff>:/images/images/414.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>原始大小</string>
+   </property>
+   <property name="toolTip">
+    <string>原始大小</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/132.bmp</normaloff>:/images/images/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actZoomIn">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/418.bmp</normaloff>:/images/images/418.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="toolTip">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actZoomOut">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/416.bmp</normaloff>:/images/images/416.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="toolTip">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="actDeselectAll">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/124.bmp</normaloff>:/images/images/124.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>取消选点</string>
+   </property>
+   <property name="toolTip">
+    <string>取消所有选中的点</string>
+   </property>
+  </action>
+  <action name="actDeletePoints">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/108.bmp</normaloff>:/images/images/108.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>删除选点</string>
+   </property>
+   <property name="toolTip">
+    <string>删除所有选中的点</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">tchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>339</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

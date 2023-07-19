@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/132.bmp</file>
+        <file>images/200.bmp</file>
+        <file>images/202.bmp</file>
+        <file>images/204.bmp</file>
+        <file>images/206.bmp</file>
+        <file>images/208.bmp</file>
+        <file>images/500.bmp</file>
+        <file>images/502.bmp</file>
+        <file>images/504.bmp</file>
+        <file>images/212.bmp</file>
+        <file>images/100.bmp</file>
+        <file>images/104.bmp</file>
+        <file>images/122.bmp</file>
+        <file>images/CN.jpg</file>
+        <file>images/timg2.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TFormDoc</class>
+ <widget class="QWidget" name="TFormDoc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>662</width>
+    <height>433</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="actOpen">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/122.bmp</normaloff>:/images/images/122.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件</string>
+   </property>
+   <property name="statusTip">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actCut">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/200.bmp</normaloff>:/images/images/200.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>剪切</string>
+   </property>
+   <property name="toolTip">
+    <string>剪切</string>
+   </property>
+   <property name="statusTip">
+    <string>剪切到粘贴板</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actCopy">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/202.bmp</normaloff>:/images/images/202.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>复制</string>
+   </property>
+   <property name="toolTip">
+    <string>复制</string>
+   </property>
+   <property name="statusTip">
+    <string>复制到粘贴板</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actPaste">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/204.bmp</normaloff>:/images/images/204.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+   <property name="toolTip">
+    <string>粘贴</string>
+   </property>
+   <property name="statusTip">
+    <string>从粘贴板粘贴</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actFont">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/506.bmp</normaloff>:/images/images/506.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>字体</string>
+   </property>
+   <property name="toolTip">
+    <string>设置字体</string>
+   </property>
+   <property name="statusTip">
+    <string>设置字体</string>
+   </property>
+  </action>
+  <action name="actClose">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/132.bmp</normaloff>:/images/images/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭本窗口</string>
+   </property>
+   <property name="statusTip">
+    <string>关闭本窗口</string>
+   </property>
+  </action>
+  <action name="actUndo">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/206.bmp</normaloff>:/images/images/206.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+   <property name="toolTip">
+    <string>撤销编辑操作</string>
+   </property>
+   <property name="statusTip">
+    <string>撤销编辑操作</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actRedo">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/208.bmp</normaloff>:/images/images/208.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>重复</string>
+   </property>
+   <property name="toolTip">
+    <string>重复编辑操作</string>
+   </property>
+   <property name="statusTip">
+    <string>重复编辑操作</string>
+   </property>
+  </action>
+  <action name="actSave">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/104.bmp</normaloff>:/images/images/104.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>取消修改标志</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actClose</sender>
+   <signal>triggered()</signal>
+   <receiver>TFormDoc</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>429</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actCut</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>cut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actCopy</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actPaste</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actUndo</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>undo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actRedo</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>redo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

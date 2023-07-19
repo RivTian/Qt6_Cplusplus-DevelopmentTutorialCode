@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>495</width>
+    <height>327</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QComboBox::drop-down{
+	image: url(:/images/images/down.bmp);
+}
+
+QSpinBox::up-button{
+	image: url(:/images/images/up.bmp);
+}
+
+QSpinBox::down-button{
+	image: url(:/images/images/down.bmp);
+}
+
+QCheckBox::indicator:checked{
+ image: url(:/images/images/checked.bmp);
+}
+
+QCheckBox::indicator:unchecked{
+image: url(:/images/images/unchecked.bmp);
+}
+</string>
+  </property>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>105</y>
+     <width>106</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>New Item</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>New Item</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>New Item</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>New Item</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>105</y>
+     <width>91</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="maximum">
+    <number>1000</number>
+   </property>
+   <property name="value">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>200</y>
+     <width>86</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Checked</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>200</y>
+     <width>103</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Unchecked</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>927</width>
+    <height>616</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>目录和文件操作</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_10">
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QToolBox" name="toolBox">
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="pageApp">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>342</width>
+         <height>379</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/images/802.bmp</normaloff>:/images/images/802.bmp</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>QCoreApplication类</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the directory that contains the application executable</string>
+             </property>
+             <property name="text">
+              <string>applicationDirPath()</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the file path of the application executable</string>
+             </property>
+             <property name="text">
+              <string>applicationFilePath()</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>This property holds the name of this application</string>
+             </property>
+             <property name="text">
+              <string>applicationName()</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_62">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>set the name of this application</string>
+             </property>
+             <property name="text">
+              <string>setApplicationName()</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns a list of paths that the application will search when dynamically loading libraries</string>
+             </property>
+             <property name="text">
+              <string>libraryPaths()</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_61">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>This property holds the name of the organization that wrote this application</string>
+             </property>
+             <property name="text">
+              <string>organizationName()</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_40">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Tells the application to exit with a return code.</string>
+             </property>
+             <property name="text">
+              <string>exit() 退出应用程序</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageFile">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>342</width>
+         <height>379</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/images/804.bmp</normaloff>:/images/images/804.bmp</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>QFile类</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QGroupBox" name="groupBox_10">
+          <property name="title">
+           <string>静态函数</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton_48">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Copies the file fileName to newName.</string>
+             </property>
+             <property name="text">
+              <string>copy()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButton_49">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Removes the file specified by the fileName given.</string>
+             </property>
+             <property name="text">
+              <string>remove()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButton_50">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Renames the file oldName to newName. </string>
+             </property>
+             <property name="text">
+              <string>rename()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_51">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns true if the file specified by fileName exists; otherwise returns false.</string>
+             </property>
+             <property name="text">
+              <string>exists()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_63">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Moves a specific file to the trash</string>
+             </property>
+             <property name="text">
+              <string>moveToTrash()</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="title">
+           <string>成员函数</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton_53">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Copies the file currently specified by fileName() to a file called newName</string>
+             </property>
+             <property name="text">
+              <string>copy()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pushButton_56">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Renames the file currently specified by fileName() to newName. Returns true if successful; otherwise returns false.</string>
+             </property>
+             <property name="text">
+              <string>rename()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_55">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Removes the file specified by fileName(). Returns true if successful; otherwise returns false.</string>
+             </property>
+             <property name="text">
+              <string>remove()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_54">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns true if the file specified by fileName() exists; otherwise returns false.</string>
+             </property>
+             <property name="text">
+              <string>exists()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="pushButton_64">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Moves the file specified by fileName() to the trash</string>
+             </property>
+             <property name="text">
+              <string>moveToTrash()</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageFileInfo">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>342</width>
+         <height>379</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/images/135.JPG</normaloff>:/images/images/135.JPG</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>QFileInfo类</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <property name="leftMargin">
+         <number>3</number>
+        </property>
+        <property name="topMargin">
+         <number>3</number>
+        </property>
+        <property name="rightMargin">
+         <number>3</number>
+        </property>
+        <property name="bottomMargin">
+         <number>3</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="title">
+           <string>文件信息</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>3</number>
+           </property>
+           <property name="rightMargin">
+            <number>3</number>
+           </property>
+           <property name="bottomMargin">
+            <number>3</number>
+           </property>
+           <property name="spacing">
+            <number>3</number>
+           </property>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="pushButton_30">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>The base name consists of all characters in the file up to (but not including) the first '.' character</string>
+             </property>
+             <property name="text">
+              <string>baseName()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_29">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns a file's path absolute path. This doesn't include the file name</string>
+             </property>
+             <property name="text">
+              <string>absolutePath() </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton_28">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns an absolute path including the file name</string>
+             </property>
+             <property name="text">
+              <string>absoluteFilePath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="pushButton_31">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>The complete base name consists of all characters in the file up to (but not including) the last '.' character</string>
+             </property>
+             <property name="text">
+              <string>completeBaseName()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QPushButton" name="pushButton_42">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns true if this object points to a directory or to a symbolic link to a directory; otherwise returns false</string>
+             </property>
+             <property name="text">
+              <string>isDir()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QPushButton" name="pushButton_43">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns true if this object points to a file or to a symbolic link to a file</string>
+             </property>
+             <property name="text">
+              <string>isFile()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QPushButton" name="pushButton_35">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns true if the file is executable; otherwise returns false.</string>
+             </property>
+             <property name="text">
+              <string>isExecutable()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QPushButton" name="pushButton_36">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the date and time when the file was last modified.</string>
+             </property>
+             <property name="text">
+              <string>lastModified()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QPushButton" name="pushButton_44">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the date and time when the file was last read (accessed).</string>
+             </property>
+             <property name="text">
+              <string>lastRead()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButton_33">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the name of the file, excluding the path.</string>
+             </property>
+             <property name="text">
+              <string>fileName()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1">
+            <widget class="QPushButton" name="pushButton_27">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns true if the file exists; otherwise returns false</string>
+             </property>
+             <property name="text">
+              <string>exists()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="pushButton_39">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>The suffix consists of all characters in the file after (but not including) the last '.'</string>
+             </property>
+             <property name="text">
+              <string>suffix()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QPushButton" name="pushButton_59">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns true if the file exists; otherwise returns false</string>
+             </property>
+             <property name="text">
+              <string>静态函数exists()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="pushButton_32">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>The complete suffix consists of all characters in the file after (but not including) the first '.'</string>
+             </property>
+             <property name="text">
+              <string>completeSuffix()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButton_34">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the file name, including the path (which may be absolute or relative).</string>
+             </property>
+             <property name="text">
+              <string>filePath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pushButton_37">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the file's path. This doesn't include the file name.</string>
+             </property>
+             <property name="text">
+              <string>path()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_38">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the file size in bytes.</string>
+             </property>
+             <property name="text">
+              <string>size()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QPushButton" name="pushButton_58">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the date and time when the file was created</string>
+             </property>
+             <property name="text">
+              <string>birthTime()</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageDir">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>325</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/images/007.GIF</normaloff>:/images/images/007.GIF</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>QDir类</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>静态函数</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the absolute path of the user's home directory</string>
+             </property>
+             <property name="text">
+              <string>homePath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton_10">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the absolute canonical path of the system's temporary directory</string>
+             </property>
+             <property name="text">
+              <string>tempPath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_9">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the absolute path of the root directory</string>
+             </property>
+             <property name="text">
+              <string>rootPath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns a list of the root directories on this system</string>
+             </property>
+             <property name="text">
+              <string>drives()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the absolute path of the application's current directory</string>
+             </property>
+             <property name="text">
+              <string>currentPath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pushButton_60">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Sets the application's current working directory to path</string>
+             </property>
+             <property name="text">
+              <string>setCurrent()</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="title">
+           <string>文件或目录操作</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton_20">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Creates a sub-directory called dirName.</string>
+             </property>
+             <property name="text">
+              <string>mkdir()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_22">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Removes the file, fileName.</string>
+             </property>
+             <property name="text">
+              <string>remove()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pushButton_23">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Renames a file or directory from oldName to newName</string>
+             </property>
+             <property name="text">
+              <string>rename()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="pushButton_26">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Sets the path of the directory to path</string>
+             </property>
+             <property name="text">
+              <string>setPath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_24">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Removes the directory specified by dirName.</string>
+             </property>
+             <property name="text">
+              <string>rmdir()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="pushButton_12">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Removes the directory, including all its contents.</string>
+             </property>
+             <property name="text">
+              <string>removeRecursively()</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>文件或目录信息</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButton_19">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the path name of a file in the directory</string>
+             </property>
+             <property name="text">
+              <string>filePath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="pushButton_11">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns a list of the names of all the files and directories in the directory</string>
+             </property>
+             <property name="text">
+              <string>entryList(dir)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="pushButton_17">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns a list of the names of all the files and directories in the directory</string>
+             </property>
+             <property name="text">
+              <string>entryList(file)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_14">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the absolute path (a path that starts with &quot;/&quot; or with a drive specification)</string>
+             </property>
+             <property name="text">
+              <string>absolutePath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButton_15">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the canonical path, i.e. a path without symbolic links or redundant &quot;.&quot; or &quot;..&quot; elements.</string>
+             </property>
+             <property name="text">
+              <string>canonicalPath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="pushButton_18">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns true if the directory exists</string>
+             </property>
+             <property name="text">
+              <string>exists()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton_13">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the absolute path name of a file in the directory</string>
+             </property>
+             <property name="text">
+              <string>absoluteFilePath()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_65">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the path</string>
+             </property>
+             <property name="text">
+              <string>path()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pushButton_16">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns the name of the directory</string>
+             </property>
+             <property name="text">
+              <string>dirName()</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="pushButton_66">
+             <property name="toolTip">
+              <string>Returns whether the directory is empty</string>
+             </property>
+             <property name="text">
+              <string>isEmpty()</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageTempDir">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>342</width>
+         <height>379</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/images/806.bmp</normaloff>:/images/images/806.bmp</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>QTemporaryDir类</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QPushButton" name="pushButton_21">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>在QDir::tempPath()返回的系统临时目录下创建临时文件夹</string>
+             </property>
+             <property name="text">
+              <string>1.在系统临时目录下创建临时文件夹</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_67">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>在指定目录下创建临时文件夹</string>
+             </property>
+             <property name="text">
+              <string>2.在指定目录下创建临时文件夹</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_68">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>在QDir::currentPath()表示的当前目录下创建临时文件夹</string>
+             </property>
+             <property name="text">
+              <string>3.在当前目录下创建临时文件夹</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageTempFile">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>342</width>
+         <height>379</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/images/174.JPG</normaloff>:/images/images/174.JPG</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>QTemporaryFile类</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <widget class="QGroupBox" name="groupBox_12">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QPushButton" name="pushButton_25">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>在QDir::tempPath()返回的系统临时目录下创建临时文件</string>
+             </property>
+             <property name="text">
+              <string>1. 在系统临时目录下创建临时文件</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_69">
+             <property name="toolTip">
+              <string>在指定目录下创建临时文件</string>
+             </property>
+             <property name="text">
+              <string>2.在指定目录下创建临时文件</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_70">
+             <property name="toolTip">
+              <string>在QDir::currentPath()表示的当前目录下创建临时文件</string>
+             </property>
+             <property name="text">
+              <string>3.在当前目录下创建临时文件</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageWatcher">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>342</width>
+         <height>379</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/images/images/714.bmp</normaloff>:/images/images/714.bmp</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>QFileSystemWatcher类</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QGroupBox" name="groupBox_11">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QPushButton" name="pushButton_46">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Adds path to the file system watcher if path exists.</string>
+             </property>
+             <property name="text">
+              <string>addPath()并开始监视</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_47">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Removes the specified path from the file system watcher.</string>
+             </property>
+             <property name="text">
+              <string>removePath()并停止监视</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_52">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns a list of paths to directories that are being watched.</string>
+             </property>
+             <property name="text">
+              <string>directories()</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_57">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Returns a list of paths to files that are being watched.</string>
+             </property>
+             <property name="text">
+              <string>files()</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButton_41">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>打开文件</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/images/images/007.GIF</normaloff>:/images/images/007.GIF</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_45">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>打开目录</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/images/images/122.bmp</normaloff>:/images/images/122.bmp</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>清除文本框</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/images/images/212.bmp</normaloff>:/images/images/212.bmp</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>文 件 </string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="editFile">
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>目 录 </string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="editDir">
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>信 息 </string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPlainTextEdit" name="plainTextEdit">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="lineWrapMode">
+            <enum>QPlainTextEdit::WidgetWidth</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

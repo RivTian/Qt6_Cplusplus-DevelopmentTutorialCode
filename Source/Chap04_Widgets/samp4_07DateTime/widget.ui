@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>708</width>
+    <height>319</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string> 日期时间数据</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>日期时间</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1">
+       <widget class="QPushButton" name="btnGetTime">
+        <property name="text">
+         <string>读取当前日期时间</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="LabDateTime">
+        <property name="text">
+         <string>字符串显示</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>时  间</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QTimeEdit" name="timeEdit">
+        <property name="displayFormat">
+         <string>HH:mm:ss</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+        <property name="time">
+         <time>
+          <hour>15</hour>
+          <minute>30</minute>
+          <second>55</second>
+         </time>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="editTime">
+        <property name="inputMask">
+         <string>99:99:99;_</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="btnDebugTime">
+        <property name="text">
+         <string>qDebug--Time</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="btnSetTime">
+        <property name="text">
+         <string>设置时间fromString</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>日  期</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QDateEdit" name="dateEdit">
+        <property name="dateTime">
+         <datetime>
+          <hour>0</hour>
+          <minute>0</minute>
+          <second>0</second>
+          <year>2021</year>
+          <month>9</month>
+          <day>21</day>
+         </datetime>
+        </property>
+        <property name="currentSection">
+         <enum>QDateTimeEdit::YearSection</enum>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy年M月d日</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+        <property name="currentSectionIndex">
+         <number>0</number>
+        </property>
+        <property name="date">
+         <date>
+          <year>2021</year>
+          <month>9</month>
+          <day>21</day>
+         </date>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="editDate">
+        <property name="inputMask">
+         <string>9999-99-99</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="btnSetDate">
+        <property name="text">
+         <string>设置日期fromString</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>日期时间</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QDateTimeEdit" name="dateTimeEdit">
+        <property name="dateTime">
+         <datetime>
+          <hour>8</hour>
+          <minute>21</minute>
+          <second>28</second>
+          <year>2021</year>
+          <month>9</month>
+          <day>19</day>
+         </datetime>
+        </property>
+        <property name="date">
+         <date>
+          <year>2021</year>
+          <month>9</month>
+          <day>19</day>
+         </date>
+        </property>
+        <property name="time">
+         <time>
+          <hour>8</hour>
+          <minute>21</minute>
+          <second>28</second>
+         </time>
+        </property>
+        <property name="currentSection">
+         <enum>QDateTimeEdit::YearSection</enum>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy-MM-dd HH:mm:ss</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="editDateTime">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="inputMask">
+         <string>9999-99-99 99:99:99</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QPushButton" name="btnSetDateTime">
+        <property name="text">
+         <string>日期时间fromString</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="btnDebugDate">
+        <property name="text">
+         <string>qDebug--Date</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QPushButton" name="btnDebugDateTime">
+        <property name="text">
+         <string>qDebug--DateTime</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>日历选择</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="editCalendar"/>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCalendarWidget" name="calendarWidget">
+        <property name="selectedDate">
+         <date>
+          <year>2021</year>
+          <month>9</month>
+          <day>15</day>
+         </date>
+        </property>
+        <property name="gridVisible">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>选择的日期：</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
