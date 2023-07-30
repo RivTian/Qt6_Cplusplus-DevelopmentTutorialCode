@@ -10,6 +10,7 @@ QT_END_NAMESPACE
 
 class Widget : public QWidget
 {
+    // 插入宏定义
     Q_OBJECT
 
 private:
